@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Banamali Book Store — a beloved Jagatsinghpur bookstore established in 1937.">
+  <title>Banamali Book Store — Since 1937</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Banamali Book Store home">
+      <span class="brand-mark">B</span>
+      <span><b>Banamali</b><small>BOOK STORE</small></span>
+    </a>
+    <nav>
+      <a href="#story">Our story</a>
+      <a href="#shelf">The shelf</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <button class="nav-cta" data-scroll="#visit">Find the store <span>↗</span></button>
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">JAGATSINGHPUR · ODISHA · EST. 1937</p>
+        <h1>A little shop<br>with a <em>long</em><br>memory.</h1>
+        <p class="hero-lede">For generations, Banamali Book Store has been a familiar stop for students, readers and curious minds in Jagatsinghpur.</p>
+        <div class="hero-actions">
+          <a class="button dark" href="#shelf">Explore the shelf <span>↓</span></a>
+          <a class="text-link" href="#story">Read our story <span>→</span></a>
+        </div>
+      </div>
+
+      <div class="hero-stage reveal delay-1" aria-label="Decorative 3D stack of books">
+        <div class="orbit orbit-1"></div><div class="orbit orbit-2"></div>
+        <div class="book book-a"><span>ODISHA</span><b>Stories<br>That Stay</b><i>01</i></div>
+        <div class="book book-b"><span>GRAMMAR</span><b>Words<br>in Motion</b><i>02</i></div>
+        <div class="book book-c"><span>CLASSICS</span><b>The<br>Open Shelf</b><i>03</i></div>
+        <div class="hero-stamp"><strong>89</strong><span>YEARS<br>OF BOOKS</span></div>
+        <div class="floor-glow"></div>
+      </div>
+      <div class="hero-side-note">KEEP TURNING <span>✦</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Store highlights">
+      <div>ESTABLISHED 1937</div><span>✦</span><div>JAGATSINGHPUR, ODISHA</div><span>✦</span><div>BOOKS · LEARNING · COMMUNITY</div><span>✦</span><div>A PLACE TO BROWSE</div>
+    </section>
+
+    <section class="story section" id="story">
+      <div class="section-label"><span>01</span><span>THE STORY</span></div>
+      <div class="story-grid">
+        <div class="story-heading reveal">
+          <p class="eyebrow">A BOOKSHOP, BUILT OVER TIME</p>
+          <h2>Some places<br>become part of<br><em>a town's memory.</em></h2>
+        </div>
+        <div class="story-copy reveal delay-1">
+          <p class="dropcap">B</p>
+          <p>Banamali Book Store was established in <strong>1937</strong>, making it one of the oldest book stores in Jagatsinghpur. Its story is less about a grand building and more about a simple habit that lasts: walking in, looking around, and finding something worth taking home.</p>
+          <p>Today, the shop carries that same sense of familiarity — a place where learning, school life and everyday reading meet.</p>
+          <div class="quote">“A good bookshop doesn't just sell books. It keeps a town reading.”</div>
+        </div>
+      </div>
+      <div class="timeline">
+        <div><b>1937</b><span>The beginning</span></div>
+        <div><b>3+</b><span>Generations of stewardship</span></div>
+        <div><b>∞</b><span>Pages still turning</span></div>
+      </div>
+    </section>
+
+    <section class="shelf section" id="shelf">
+      <div class="section-label"><span>02</span><span>THE SHELF</span></div>
+      <div class="shelf-head">
+        <div>
+          <p class="eyebrow">EXPLORE BY INTEREST</p>
+          <h2>Pick a direction.</h2>
+        </div>
+        <div class="controls">
+          <input id="search" type="search" placeholder="Search categories..." aria-label="Search categories">
+          <div class="filters">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="school">School</button>
+            <button class="filter" data-filter="competitive">Competitive</button>
+            <button class="filter" data-filter="reading">Reading</button>
+          </div>
+        </div>
+      </div>
+      <div class="book-grid" id="bookGrid">
+        <article class="card" data-cat="school" data-name="school textbooks">
+          <div class="mini-book coral"><span>01</span><b>School<br>Essentials</b></div>
+          <div><span class="tag">SCHOOL</span><h3>Textbooks & Study</h3><p>Everyday learning essentials for students.</p></div>
+        </article>
+        <article class="card" data-cat="competitive" data-name="competitive exam preparation">
+          <div class="mini-book ink"><span>02</span><b>Prepare.<br>Practice.</b></div>
+          <div><span class="tag">EXAMS</span><h3>Competitive Prep</h3><p>Reference material and practice-focused reading.</p></div>
+        </article>
+        <article class="card" data-cat="school" data-name="grammar english">
+          <div class="mini-book gold"><span>03</span><b>Words<br>Well Used</b></div>
+          <div><span class="tag">LANGUAGE</span><h3>English & Grammar</h3><p>Grammar, composition and language learning.</p></div>
+        </article>
+        <article class="card" data-cat="reading" data-name="odisha literature classics">
+          <div class="mini-book green"><span>04</span><b>Read<br>Closer.</b></div>
+          <div><span class="tag">READING</span><h3>Literature & Classics</h3><p>Books for reading beyond the classroom.</p></div>
+        </article>
+        <article class="card" data-cat="reading" data-name="general knowledge">
+          <div class="mini-book violet"><span>05</span><b>Know<br>More.</b></div>
+          <div><span class="tag">GENERAL</span><h3>Knowledge</h3><p>Curiosity-led books and useful references.</p></div>
+        </article>
+        <article class="card" data-cat="competitive" data-name="reference guides">
+          <div class="mini-book brown"><span>06</span><b>Keep<br>Going.</b></div>
+          <div><span class="tag">REFERENCE</span><h3>Guides & Practice</h3><p>Practical material for focused preparation.</p></div>
+        </article>
+      </div>
+      <p id="empty" class="empty" hidden>No matching categories — try another search.</p>
+      <p class="small-note">* Categories shown here describe the kinds of books a bookstore like Banamali may serve; they are not a live inventory list.</p>
+    </section>
+
+    <section class="owner section">
+      <div class="owner-card reveal">
+        <div class="owner-number">1937</div>
+        <div class="portrait">
+          <div class="portrait-inner"><span>THE<br>SHOPKEEPER</span><b>R</b></div>
+        </div>
+        <div class="owner-copy">
+          <p class="eyebrow">THE PERSON BEHIND THE COUNTER</p>
+          <h2>Mr. Ramakanta<br><em>Sahoo</em></h2>
+          <p>The current owner of Banamali Book Store, carrying forward the shop's long connection with readers and learners in Jagatsinghpur.</p>
+          <div class="owner-sign">BANAMALI BOOK STORE <span>✦</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit section" id="visit">
+      <div class="section-label"><span>03</span><span>COME BY</span></div>
+      <div class="visit-grid">
+        <div class="visit-copy reveal">
+          <p class="eyebrow">FIND THE BOOKSHOP</p>
+          <h2>See you<br>between the<br><em>shelves.</em></h2>
+          <p>Banamali Book Store is in <strong>Jagatsinghpur, Odisha</strong>, near Court Chhak.</p>
+          <div class="visit-actions">
+            <a class="button dark" href="https://www.google.com/maps/search/?api=1&query=Banamali%20Book%20Store%20Jagatsinghpur" target="_blank" rel="noopener">Open in Maps ↗</a>
+            <button class="button light" id="copyLocation">Copy location</button>
+          </div>
+          <p id="copyStatus" class="copy-status" aria-live="polite"></p>
+        </div>
+        <div class="map-card reveal delay-1">
+          <div class="map-lines"></div>
+          <div class="map-pin"><span>✦</span></div>
+          <div class="map-label"><b>BANAMALI</b><span>JAGATSINGHPUR · ODISHA</span></div>
+          <div class="map-road r1"></div><div class="map-road r2"></div><div class="map-road r3"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="closing-orb"></div>
+      <p class="eyebrow">SINCE 1937</p>
+      <h2>Keep a good book<br><em>close.</em></h2>
+      <a href="#visit" class="button cream">Visit Banamali <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><span class="brand-mark">B</span><div><b>Banamali Book Store</b><small>Jagatsinghpur, Odisha · Established 1937</small></div></div>
+    <div class="footer-links"><a href="#story">Story</a><a href="#shelf">Shelf</a><a href="#visit">Visit</a></div>
+    <div class="footer-end">MADE FOR READERS <span>✦</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
